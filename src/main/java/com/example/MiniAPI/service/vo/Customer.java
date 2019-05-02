@@ -23,7 +23,7 @@ public class Customer implements Serializable {
 	@Column(name="lastname")
 	private String lastName;
 	
-	
+	public Customer() {}
 	
 	public Customer(Integer id, String firstName, String lastName) {
 		super();

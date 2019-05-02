@@ -15,12 +15,6 @@ public interface GenericDAO<T , ID extends Serializable> {
     public void cleanSession();
 
     public Session getSession();
-    public Session getSession( String key );
-
-    public SessionFactory getTenantSessionFactory();
-    
-    
-    
 
     public List<T> findAll();
     

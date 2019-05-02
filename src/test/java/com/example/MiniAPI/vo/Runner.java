@@ -18,7 +18,7 @@ public class Runner {
 	@Test
 	public void crud() {
 //		SessionFactory sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
-		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		/*SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         
         create(session);
@@ -30,10 +30,10 @@ public class Runner {
         delete(session);
         read(session);
         
-        session.close();
+        session.close();*/
 	}
 	
-	private void delete(Session session) {
+	/*private void delete(Session session) {
         System.out.println("Deleting mondeo record...");
         Customer mondeo = (Customer) session.get(Customer.class, "mondeo");
          
@@ -79,6 +79,6 @@ public class Runner {
         for (Customer c : Customers) {
             System.out.printf("%-30.30s  %-30.30s%n", c.getFirstName(), c.getLastName());
         }
-    }
+    }*/
 	
 }
