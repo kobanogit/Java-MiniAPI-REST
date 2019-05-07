@@ -3,6 +3,7 @@ package com.example.MiniAPI.DAO;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
 
 import com.example.MiniAPI.service.vo.Customer;
 
