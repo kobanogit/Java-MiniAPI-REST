@@ -20,15 +20,12 @@ public class CustomerServiceImpl implements CustomerService{
 	@Autowired private CustomerDAO customerDAO;
 
 	public List<Customer> getCustomerList() {
-		List<Customer> customers = customerDAO.findAll();
+//		List<Customer> customers = customerDAO.findAll();
 		
-//		List<Customer> customers = new ArrayList<Customer>();
-//		Customer customer1 = new Customer(1, "f1", "l1");
-//		Customer customer2 = new Customer(2, "f2", "l2");
-//		Customer customer3 = new Customer(3, "f3", "l3");
-//		customers.add(customer1);
-//		customers.add(customer2);
-//		customers.add(customer3);
+		// Service test
+		List<Customer> customers = new ArrayList<Customer>();
+		for (int i = 0; i < 3; i++ ) 
+			customers.add(new Customer(i, "f" + i, "l" + i));
 		
 		return customers;
 	}

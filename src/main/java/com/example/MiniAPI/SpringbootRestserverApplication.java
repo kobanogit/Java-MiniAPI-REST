@@ -11,7 +11,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = {"com.example.MiniAPI.controller", "com.example.MiniAPI.service", "com.example.MiniAPI.DAO", "com.example.MiniAPI.DAO.impl"})
+@SpringBootApplication(
+		scanBasePackages = {
+		"com.example.MiniAPI.controller", 
+		"com.example.MiniAPI.service", 
+		"com.example.MiniAPI.DAO", 
+		"com.example.MiniAPI.DAO.impl"})
 //@SpringBootApplication
 //@ComponentScan({"com.example.MiniAPI.controller","com.example.MiniAPI.service"})
 //@EntityScan("com.example.MiniAPI.service.vo")
